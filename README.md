@@ -30,6 +30,11 @@ android {
 }
 ```
 
+Instead of defining each configuration file manually, you could also store them in a seperate directory and include them all at once: 
+```groovy
+proguardFiles(files{new File('./proguard').listFiles()})
+```
+
 ### Libraries
 * [ACRA 4.5.0](https://github.com/ACRA/acra)
 * [ActionBarSherlock 4.4.0](http://actionbarsherlock.com/)
